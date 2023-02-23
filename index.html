@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mynerve&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portafolio personal Ricardo</title>
+</head>
+<body>
+    <div class="grid-layout">
+
+
+        <div class="menu">
+            <div id="menu-nav">
+                <ul>
+                    <li><a href="#Inicio">Inicio</a></li>
+                    <li><a href="#educacion">Educación</a></li>
+                    <li><a href="#informacion">Informacion</a></li>
+                    <li><a href="#fotos">Imagenes</a></li>
+                    <li class="item-r"><a href="./images/ricardo.pdf" download>Descargar CV</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="bienvenida" data-aos="fade-up-left" id="Inicio">
+            <div class="hola-soy">
+                <h2 class="presentacion">Hola <br> Soy Ricardo Paredes</h2>
+                <p class="extras">Actualmente, estoy cursando una carrera en línea, como también estoy tomando distintos cursos para poder tener práctica en el ámbito de la programación.</p>
+            </div>
+        </div>
+
+
+        <div class="ric-foto" data-aos="fade-left">
+            <img src="./images/ricardo.JPG" alt="Foto de Ricardo" class="ric-editar">
+        </div>
+
+
+        <div class="educacion" data-aos="fade-up" data-aos-duration="1500" id="educacion">
+            <div class="texto">
+                <h2>Educación</h2>
+                <p class="escuela-nombre">Universidad del valle de México</p>
+                <p>Licenciatura en ciencia de datos</p>
+                <p>Es una licenciatura completamente en línea, en donde apenas estoy cursando el primer cuatrimestre. Apenas nos estamos familiarizando con los términos que existen en la ciencia de datos.</p>
+                <p class="escuela-nombre">Dev. f</p>
+                <p>Master en coding</p>
+                <p>Este curso apenas lo estoy cursando, y de lo que se trata es en ensañarse en como conocer las bases para poder desarrollar una página web, justamente uno de los proyectos que nos encargaron es en hacer esta página.</p>
+                <p class="escuela-nombre">UCamp</p>
+                <p>Ciberseguridad y Hacking Ético</p>
+                <p>Es otro de los cursos que estoy cursando en este momento en donde empiezan a enseñar tanto sobre la ciberseguridad como en el hacking ético, en donde los primeros menos nos dan una parte teórica para que nos sean más fácil cuando empezamos con las prácticas.</p>
+            </div>
+        </div>
+
+
+        <div class="nombre" data-aos="flip-left" data-aos-duration="1000" id="informacion">
+            <p class="informacion">
+                NOMBRE <br>
+                Ricardo Paredes Garcia <br><br>
+                FECHA DE NACIMIENTO <br>
+                16 de octubre del 2002 <br><br>
+                CORREO ELECTRÓNICO <br>
+                ricardoparedeg16@gmail.com <br><br>
+                HOBBIES <br>
+                videojuegos, películas, música
+            </p>
+            <div>
+                <a href="https://twitter.com/Ric10037518"target="_blank"><img src="./images/twitter.png" class="redes-sociales" alt="Link para twitter"></a>
+                <a href="https://github.com/RichP02" target="_blank"><img src="./images/github.png" class="redes-sociales" alt="Link para GitHub"></a>
+                <a href="https://www.facebook.com/profile.php?id=100007138787934" target="_blank"><img src="./images/facebook.png" class="redes-sociales" alt="Link para Facebook"></a>
+            </div>
+        </div>
+
+
+        <div class="fotos" data-aos="flip-down" data-aos-duration="1500" id="fotos">
+            <div class="container-main">
+                <div class="container">
+                    <img src="./images/kali.jpg" alt="Foto de kali linux" class="image">
+                    <div class="overlay">
+                        <div class="text">Foto de kali linux, por mi curso de UCamp</div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <img src="./images/videojuego.png" alt="Imagen de una de las primeras páginas que hice" class="image">
+                    <div class="overlay">
+                        <div class="text">Foto de mi primera pagina que hice en Dev. f</div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <img src="./images/html-css.png" alt="Imagen del logo de HTML y CSS" class="image">
+                    <div class="overlay">
+                        <div class="text">Imagen del logo de HTML y CSS</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="descargar">
+            <a href="./images/ricardo.pdf" download><button id="download-button">DESCARGAR CV</button></a>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

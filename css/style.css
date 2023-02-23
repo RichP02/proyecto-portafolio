@@ -1,0 +1,269 @@
+.grid-layout{
+    display: grid;
+    grid-template-areas: "menu menu menu"
+                        "bienvenida bienvenida ric-foto"
+                        "educacion educacion nombre"
+                        "fotos fotos fotos"
+                        "descargar descargar descargar";
+    grid-template-rows: 9vh auto;
+    grid-template-columns: 45% 50vh auto;
+}
+
+
+/*------------------------------------------*/
+/*-------------------Menu-------------------*/
+.menu{
+    grid-area: menu;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu-nav{
+    background-color: #000;
+}
+
+#menu-nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu-nav ul li{
+    display: inline-block;
+}
+
+#menu-nav ul li a{
+    color: white;
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+#menu-nav ul li a:hover{
+    background-color: #a44eb9;
+}
+
+.item-r{
+    float: right;
+}
+
+
+/*------------------------------------------*/
+/*----------------bienvenida----------------*/
+.bienvenida{
+    grid-area: bienvenida;
+}
+
+.presentacion{
+    font-family: 'Mynerve', cursive;
+    font-size: 70px;
+    color: #59CA76;
+    text-align: left;
+    text-align: center;
+}
+
+.extras{
+    font-size: 30px;
+}
+
+
+/*------------------------------------------*/
+/*----------------ric-foto------------------*/
+.ric-foto{
+    grid-area: ric-foto;
+}
+
+.ric-editar{
+    border-radius: 10% / 50%;
+}
+
+
+/*------------------------------------------*/
+/*----------------educacion-----------------*/
+.educacion{
+    grid-area: educacion;
+    margin: 5%;
+    border-radius: 20px;
+    background-color: rgba(10, 163, 182, .4);
+}
+
+.texto{
+    font-size: 20px;
+    margin: 30px;
+}
+
+.escuela-nombre{
+    font-size: 30px;
+}
+
+
+/*------------------------------------------*/
+/*-----------------nombre-------------------*/
+.nombre{
+    grid-area: nombre;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    height: max-content;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: rgba(143, 97, 151, .6);
+    padding: 20px;
+    margin: 5%;
+    float: right;
+}
+
+.informacion{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+.redes-sociales{
+    height: 50px;
+    padding: 5px;
+}
+
+
+/*------------------------------------------*/
+/*-------------------Fotos------------------*/
+.fotos{
+    grid-area: fotos;
+}
+
+.container-main{
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+    padding: 15px;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.text {
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
+/*------------------------------------------*/
+/*----------------descargar cv--------------*/
+.descargar{
+    grid-area: descargar;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#download-button {
+    text-align: center !important;
+    background-color: #e3b5f7;
+    border-radius: 300px;
+
+    position: relative;
+    -webkit-transition: .1s background-color linear;
+    -moz-transition: .1s background-color linear;
+    -o-transition: .1s background-color linear;
+    transition: .1s background-color linear;
+    padding: 25px 46px;
+    color: #fff;
+    border-color: #8773c4;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-style: normal;
+    width: 220px;
+}
+
+#download-button:hover {
+    background-color: #fff;
+    border-radius: 300px;
+    -webkit-box-shadow: 0 5px 0 0 #b13f21;
+    -moz-box-shadow: 0 5px 0 0 #b13f21;
+    box-shadow: 0 5px 0 0 #b13f21;
+    position: relative;
+    -webkit-transition: .1s background-color linear;
+    -moz-transition: .1s background-color linear;
+    -o-transition: .1s background-color linear;
+    transition: .1s background-color linear;
+    color: #d95430;
+}
+
+
+/*-------------------------------------------*/
+/*-------------Cambiando diseños-------------*/
+
+@media (max-width:1400px) {
+    .grid-layout{
+        display: grid;
+        grid-template-areas: "menu menu"
+                        "bienvenida ric-foto"
+                        "educacion nombre"
+                        "fotos fotos"
+                        "descargar descargar";
+        grid-template-rows: auto;
+        grid-template-columns: 60vh auto;
+    }
+}
+
+@media (max-width:1000px) {
+    .grid-layout{
+        display: grid;
+        grid-template-areas:
+                        "menu"
+                        "bienvenida"
+                        "ric-foto"
+                        "nombre"
+                        "educacion"
+                        "fotos"
+                        "descargar";
+        grid-template-columns: auto;
+    }
+
+    .container-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ric-foto{
+        display: flex;
+        justify-content: center;
+    }
+}
