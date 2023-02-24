@@ -53,6 +53,9 @@
 /*----------------bienvenida----------------*/
 .bienvenida{
     grid-area: bienvenida;
+    background-color: rgba(143, 97, 151, .4);
+    border-radius: 20px;
+    margin: 50px;
 }
 
 .presentacion{
@@ -65,6 +68,8 @@
 
 .extras{
     font-size: 30px;
+    text-align: left;
+    padding: 30px;
 }
 
 
